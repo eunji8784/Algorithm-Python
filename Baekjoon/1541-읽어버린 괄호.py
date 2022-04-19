@@ -20,5 +20,5 @@ for i in list[1:]:
 print(result)
 
 # Pythonic하게 바꾼 코드
-# exp = [sum(map(int, x.split('+'))) for x in input().split('-')]
-# print(exp[0] - sum(exp[1:]))
+# exp_list = [sum(map(int, x.split('+'))) for x in input().split('-')]
+# print(exp_list[0] - sum(exp_list[1:]))
