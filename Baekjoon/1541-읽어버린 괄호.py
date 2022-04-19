@@ -5,9 +5,9 @@ list = []
 
 for exp in exp_list:
   if "+" in exp:
-    for i in exp.split('+'):
-      i = int(i)
-      n += i
+    for str in exp.split('+'):
+      num = int(str)
+      n += num
     list.append(n)
     n = 0
   else:
