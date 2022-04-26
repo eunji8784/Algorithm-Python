@@ -1,5 +1,5 @@
 T = int(input())
-
+array = [list(map(int, input().split())) for _ in range(T)]
+ 
 for t in range(T):
-  numList = list(map(int, input().split()))
-  print("#{} {}".format(t+1, round(sum(numList)/len(numList))))
+  print("#{} {}".format(t+1, round(sum(array[t])/len(array[t]))))
