@@ -1,2 +1,8 @@
 P, K = map(int, input().split())
-print(P - K + 1)
+count = 0
+
+while P >= K:
+  K += 1
+  count += 1
+
+print(count)
