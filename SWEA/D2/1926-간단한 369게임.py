@@ -1,16 +1,16 @@
 N = int(input())
-list369 = ['3', '6', '9']
+clap = ['3', '6', '9']
 
 for n in range(1, N + 1):
   digit = list(str(n))
-  exsisting369 = False
+  isClap = False
   
   for d in digit:
-    if d in list369:
+    if d in clap:
       print('-', end = '')
-      exsisting369 = True
+      isClap = True
 
-  if exsisting369:
+  if isClap:
     print(end = ' ')
   else:
     print(n, end = ' ')
