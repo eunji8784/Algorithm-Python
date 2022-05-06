@@ -29,3 +29,5 @@ for test_case in range(1, T + 1):
         result += chr(decimal_num)
 
     print("#{} {}".format(test_case, result))
+
+참고: http://minsone.github.io/programming/algorithm-base64-encoding-decoding
