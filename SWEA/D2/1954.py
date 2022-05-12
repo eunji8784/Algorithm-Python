@@ -11,7 +11,7 @@ for test_case in range(1, T + 1):
     x = y = 0
     d[x][y] = n
     while n != N * N:
-        for i in range(4):
+        for i in range(len(dx)):
             for _ in range(N - 1):
                 if d[x + dx[i]][y + dy[i]] != 0:
                     break
