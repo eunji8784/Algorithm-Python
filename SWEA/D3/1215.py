@@ -13,9 +13,9 @@ for test_case in range(1, T + 1):
             for k in range(K):
                 tmp1 += array[i][j + k]
                 tmp2 += array[j + k][i]
-            if tmp1 == "".join(list(reversed(tmp1))):
+            if tmp1 == tmp1[::-1]:
                 count += 1
-            if tmp2 == "".join(list(reversed(tmp2))):
+            if tmp2 == tmp2[::-1]:
                 count += 1
 
     print("#{} {}".format(test_case, count))
