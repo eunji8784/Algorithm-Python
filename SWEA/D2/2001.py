@@ -3,7 +3,7 @@ T = int(input())
 for test_case in range(1, T + 1):
     N, M = map(int, input().split())
     array = [list(map(int, input().split())) for _ in range(N)]
-    res = []
+    max_val = 0
 
     for i in range(N - M + 1):
         for j in range(N - M + 1):
@@ -15,6 +15,7 @@ for test_case in range(1, T + 1):
                     val += array[tmp_i][tmp_j]
                     tmp_j += 1
                 tmp_i += 1
-            res.append(val)
+            if val > max_val:
+                max_val = val
 
-    print("#{} {}".format(test_case, max(res)))
+    print("#{} {}".format(test_case, max_val))
